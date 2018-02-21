@@ -12,12 +12,12 @@ namespace WebApi.Controllers
 {
     public class DemoController : ApiController
     {
-        //private readonly IDemoTasks DemoTasks;
+        private readonly IDemoTasks DemoTasks;
 
-        //public DemoController(IDemoTasks demoTasks)
-        //{
-        //    DemoTasks = demoTasks;
-        //}
+        public DemoController(IDemoTasks demoTasks)
+        {
+            DemoTasks = demoTasks;
+        }
 
         public string Get()
         {
@@ -34,12 +34,13 @@ namespace WebApi.Controllers
         /// <summary>
         ///     returns number1.
         /// </summary>
-        //[Route("api/Demo/Number1")]
-        //public ApiResultModel Number1()
-        //{
-        //    var result = DemoTasks.Number1();
+        [Route("api/Demo/Number1")]
+        [HttpGet]
+        public ApiResultModel Number1()
+        {
+            var result = DemoTasks.Number1();
 
-        //    return result;
-        //}
+            return result;
+        }
     }
 }

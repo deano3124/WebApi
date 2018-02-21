@@ -2,23 +2,37 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Dispatcher;
+
+using Castle.Windsor;
+
+using WebApi.DIPlumbing;
 
 namespace WebApi
 {
     public static class WebApiConfig
     {
-        public static void Register(HttpConfiguration config)
+        public static void Register(HttpConfiguration config, IWindsorContainer container)
         {
-            // Web API configuration and services
+            MapRoutes(config);
+            RegisterControllerActivator(container);
+        }
 
-            // Web API routes
+        private static void MapRoutes(HttpConfiguration config)
+        {
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-            );
+                                       name: "DefaultApi",
+                                       routeTemplate: "api/{controller}/{id}",
+                                       defaults: new { id = RouteParameter.Optional }
+                                      );
+        }
+
+        private static void RegisterControllerActivator(IWindsorContainer container)
+        {
+            GlobalConfiguration.Configuration.Services.Replace(typeof(IHttpControllerActivator),
+                                                               new WindsorCompositionRoot(container));
         }
     }
 }

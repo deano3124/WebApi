@@ -109,3 +109,5 @@ C:\Users\dean.jaquez\source\repos\WebApi\WebApi\bin\Castle.Windsor.xml
 C:\Users\dean.jaquez\source\repos\WebApi\WebApi\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\dean.jaquez\source\repos\WebApi\WebApi\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\dean.jaquez\source\repos\WebApi\WebApi\bin\Castle.Core.xml
+C:\Users\dean.jaquez\Source\Repos\webapi\WebApi\bin\Swashbuckle.Core.dll
+C:\Users\dean.jaquez\Source\Repos\webapi\WebApi\bin\WebActivatorEx.dll

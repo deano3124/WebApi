@@ -7,25 +7,41 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-using WebApi.PresentationLogic.Container;
+using Castle.MicroKernel.Resolvers.SpecializedResolvers;
+using Castle.Windsor;
+using Castle.Windsor.Installer;
 
 namespace WebApi
 {
     public class WebApiApplication : System.Web.HttpApplication
     {
+        private static IWindsorContainer _container;
+
         protected void Application_Start()
         {
+            ConfigureWindsor(GlobalConfiguration.Configuration);
+
             AreaRegistration.RegisterAllAreas();
-            GlobalConfiguration.Configure(WebApiConfig.Register);
+            GlobalConfiguration.Configure(c => WebApiConfig.Register(c, _container));
+
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            IocContainer.Setup();
+        }
+
+        public static void ConfigureWindsor(HttpConfiguration configuration)
+        {
+            _container = new WindsorContainer();
+            _container.Install(FromAssembly.This());
+            _container.Kernel.Resolver.AddSubResolver(new CollectionResolver(_container.Kernel, true));
+            var dependencyResolver = new WindsorDependencyResolver(_container);
+            configuration.DependencyResolver = dependencyResolver;
         }
 
         protected void Application_End()
         {
-            IocContainer.Dispose();
+            _container.Dispose();
+            base.Dispose();
         }
     }
 }
