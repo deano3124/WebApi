@@ -1,0 +1,13 @@
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\bin\Debug\WebApi.Tests.dll
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\bin\Debug\WebApi.Tests.pdb
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\obj\Debug\WebApi.Tests.csprojResolveAssemblyReference.cache
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\obj\Debug\WebApi.Tests.csproj.CoreCompileInputs.cache
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\obj\Debug\WebApi.Tests.dll
+c:\Users\dean.jaquez\source\repos\WebApi\WebApi.Tests\obj\Debug\WebApi.Tests.pdb

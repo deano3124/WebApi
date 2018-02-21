@@ -1,0 +1,13 @@
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\bin\Debug\WebApi.Task.dll
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\bin\Debug\WebApi.Task.pdb
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\bin\Debug\WebApi.Interfaces.dll
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\bin\Debug\WebApi.Interfaces.pdb
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\obj\Debug\WebApi.Task.csprojResolveAssemblyReference.cache
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\obj\Debug\WebApi.Task.csproj.CoreCompileInputs.cache
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\obj\Debug\WebApi.Task.dll
+C:\Users\dean.jaquez\source\repos\WebApi\WebApi.Task\obj\Debug\WebApi.Task.pdb
